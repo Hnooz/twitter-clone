@@ -1,28 +1,35 @@
 <template>
+
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!-- <Search/> -->
+        <Nav/> 
+    <div class="container ml-10">
+
+        <div class="mx-40">
+
+          <AddTweet/>
+
+        </div>
+
+    </div>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import Search from './components/Search.vue'
+import Nav from './components/Nav.vue'
+import AddTweet from './components/AddTweet.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AddTweet,
+    Nav,
+    // Search
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style src="./assets/css/tailwind.css">
+
 </style>
