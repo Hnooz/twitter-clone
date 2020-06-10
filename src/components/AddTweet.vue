@@ -20,7 +20,7 @@
           </div>
         
           <ul class="text-white">
-            <li   v-for="tweet of filteredList" :key="tweet.index" class="mb-10">
+            <li v-for="tweet of filteredList" :key="tweet.index" class="mb-10">
               <p class="bg-gray-700 border-b-2 border-blue-300 mb-10 px-5 py-10 rounded-lg">
                 {{tweet}}
               </p>
@@ -32,11 +32,11 @@
 </template> 
 
 <script>
-// import Search from './components/Search.vue'
+
 export default {
   name: 'AddTweet',
   components:{
-    // Search
+
   },
 
 

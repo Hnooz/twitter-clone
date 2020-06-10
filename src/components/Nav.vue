@@ -1,6 +1,6 @@
 <template>
 <div class="w-full shadow-md border-b-2 border-blue-200">
-    <nav class=" mx-32 py-12 rounded-lg ">
+    <nav class=" mx-32 py-12 rounded-lg">
     <div class="container flex justify-between">
         <h1 class="font-semibold text-3xl text-blue-400">
           Twitter Clone
@@ -19,7 +19,12 @@
 
 <script>
 export default {
-    name:'Nav'
+    name:'Nav',
+    data() {
+      return {
+        isActive:false,
+      }
+    },
 }
 </script>
 

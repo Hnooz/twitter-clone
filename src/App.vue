@@ -3,7 +3,7 @@
   <div id="app">
 <!-- <Search/> -->
         <Nav/> 
-    <div class="container ml-10">
+    <div class="container ml-10 mb-16">
 
         <div class="mx-40">
 
@@ -12,12 +12,15 @@
         </div>
 
     </div>
-    
+    <div>
+       <Footer/>
+    </div>
+   
   </div>
 </template>
 
 <script>
-// import Search from './components/Search.vue'
+import Footer from './components/Footer.vue'
 import Nav from './components/Nav.vue'
 import AddTweet from './components/AddTweet.vue'
 export default {
@@ -25,7 +28,7 @@ export default {
   components: {
     AddTweet,
     Nav,
-    // Search
+    Footer
   }
 }
 </script>
